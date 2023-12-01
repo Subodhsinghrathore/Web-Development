@@ -1,0 +1,126 @@
+<html>
+    <head>
+        <title>Javajam Coffee House</title>
+        <style>
+            p{
+                margin: 10px;
+            }
+            form { padding: 2em; 
+            }
+
+            input, textarea { 
+                display: block; 
+                margin-bottom: 1em; 
+            }
+
+            nav a:link { 
+                color: #FEF6C2; 
+            }
+            nav a:visited { 
+                color: #D2B48C; 
+            }
+            nav a:hover { 
+                color: #CC9933; 
+            }
+
+            nav { font-weight: bold;
+                text-align: center;
+                font-size: 1.5em; 
+                padding-top: 10px; 
+                float: left; 
+                width: 200px; 
+            }
+            nav ul { list-style-type: none; 
+                padding-left: 0px; 
+            }
+            nav a { 
+                text-decoration: none; 
+            }
+
+            body { background-color: #FCEBB6;
+                font-size: .8em;
+                background-image: url(background.gif);
+                color: #221811;
+                font-family: Verdana, Arial, sans-serif; 
+            }
+                
+            header { background-color: #D2B48C;
+                    height: 150px;
+                    background-image: url(javajamlogo.jpg);
+                    background-repeat: no-repeat; 
+                }
+                    
+            h1 { font-size: 3em;
+                padding-top: 30px;
+                padding-left: 220px;
+                line-height: 200%;
+                }
+
+            main { padding: 0px 0px 2em 0px;
+                margin-left: 200px;
+                background-color: #FCEBB6; 
+                color: #221811;
+                }
+            header, nav, main, footer { 
+                display: block; 
+            }
+		 
+            #wrapper { 
+                background-color: #231814;
+                width: 80%;
+                min-width: 900px;
+                max-width: 1280px;
+                box-shadow: 3px 3px 3px #333;
+                margin-right: auto;
+                margin-left: auto; }
+            footer { 
+                background-color: #D2B48C;
+                font-size: .60em; 
+                font-style: italic;
+                text-align: center;
+                padding-bottom: 10px; 
+                border: 2px solid #221811;
+            }                     
+        </style>	
+    </head>
+
+        <body>
+            <div id="wrapper">
+            <header>
+                <h1>JavaJam Coffee House</h1>
+            </header>
+            <aside>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="music.html">Music</a></li>
+                    <li><a href="jobs.html">Jobs</a></li>
+                </ul>
+            </nav>
+            </aside>
+            <main>
+                <h2>Jobs at JavaJam</h2>
+                <p>Hello, customer welcome to our coffee shop JavaJam Coffee House. Please share your thoughts and experience in our house</p>
+                <form class="my-form">
+                    <div class="form-group">
+                        <label>Name: </label>
+                        <input type="text" name="name">
+                    </div>
+                    <div class="form-group">
+                        <label>Email: </label>
+                        <input type="text" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label>Experience </label>
+                        <textarea name="experience" cols="20" rows="5"></textarea>
+                    </div>
+                    <input class="button" type="submit" value="Submit" name="">
+                </form>
+            </main>
+                <footer>Copyright &copy; 2023 JavaJam Coffee House<br>
+                <i><a href="#">sksh@gmsil.com</a></i>
+                </footer>
+            </div>
+            </body>
+            </html>

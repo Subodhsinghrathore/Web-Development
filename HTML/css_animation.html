@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .item{
+            background-color: chartreuse;
+            color: coral;
+            height: 150px;
+            width: 150px;
+            position: relative;
+            /* animation-name: Move;
+            animation-duration: 1.5s;
+            animation-timing-function: linear;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse; */
+            animation: Move 2s linear 0s infinite normal;
+        }
+        @keyframes Move{
+            0%,100%{
+                /* position: relative; */
+                top: 0;
+                left: 0;
+            }
+            25%{
+                /* position: relative; */
+                top: 0;
+                left: 200px;
+                background-color: brown;
+                border-radius: 100%;
+                transform: scale(0.5,.5);
+            }
+            50%{
+                /* position: relative; */
+                top: 200px;
+                left: 200px;
+                background-color: blue;
+                border-radius:0%;
+                transform: scale(1,1);
+            }
+            75%{
+                /* position: relative; */
+                top: 200px;
+                left: 0;
+                background-color: crimson;
+                border-radius: 100%;
+                transform: scale(0.5,.5);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="item"></div>
+</body>
+</html>

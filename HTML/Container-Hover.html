@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        .container {
+            height: 400px;
+            width: 300px;
+            margin: 100px auto;
+            position: relative;
+            box-shadow: 0 0 15px black;
+            overflow: hidden;
+        }
+
+        .wrap {
+            height: inherit;
+            width: inherit;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        #w1 {
+            background-color: aqua;
+            transition: 1s all linear 3s;
+        }
+
+        #w2 {
+            background-color: yellow;
+            /* z-index: 1; */
+            transition: 1s all linear 2s;
+        }
+
+        #w3 {
+            background-color: pink;
+            transition: 1s all linear 1s;
+        }
+
+        #w4 {
+            background-color: brown;
+            transition: 1s all linear 0s;
+        }
+
+        .container:hover>#w4 {
+            transform: translateX(300px);
+        }
+
+        .container:hover>#w3 {
+            transform: translateY(400px);
+        }
+
+        .container:hover>#w2 {
+            transform: translateX(-300px);
+        }
+
+        .container:hover>#w1 {
+            transform: translateY(-400px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="./spider-man-no-way-home-centered.webp" alt="" class="image" height="400px" width="300px">
+        <div class="wrap" id="w1"></div>
+        <div class="wrap" id="w2"></div>
+        <div class="wrap" id="w3"></div>
+        <div class="wrap" id="w4"></div>
+    </div>
+</body>
+
+</html>
