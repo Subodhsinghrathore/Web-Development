@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="main"></div>
+    <script>
+        let arr = [0, 1, 2, 3, 4, 5]
+
+        let main = document.getElementById('main')
+        for (let i = 0; i <= arr.length; i++){
+            main.innerHTML += '<h1> Welcome to DOM</h1>'
+        }
+
+        let x = document.querySelectorAll('h1'); 
+
+        for (let i = 0; i <= arr.length; i++) {
+            if (i % 2 == 0) {
+                
+                x[i].style.color = 'red';
+            }
+            else {
+                x[i].style.color = 'green';
+            }
+        }
+    </script>
+</body>
+
+</html>

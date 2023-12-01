@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="newtask">
+            <input type="text" placeholder="Add Tasks">
+            <button id="push" onclick="add()">Add</button>
+
+        </div>
+        <div id="tasks"></div>
+    </div>
+
+    <script>
+        function add() {
+            document.querySelector('#push')
+            if (document.querySelector('#newtask input').value.length == 0) {
+                alert("Kindly Enter Task Name!")
+            }
+            else {
+                document.querySelector('#tasks').innerHTML += `
+                    <div class="task">
+                        <span id="taskname">
+                            ${document.querySelector('#newtask input').value}
+                        </span>
+                        <button class="delete">delete</button>
+                            <i class="far fa-trash-alt"></i>
+                        </button>
+                        <button class="edit">edit</edit>
+                        </button>
+                    </div>
+                `;
+
+                let current_tasks = document.querySelectorAll(".delete");
+                for (let i = 0; i < current_tasks.length; i++) {
+                    current_tasks[i].onclick = function add() {
+                        this.parentNode.remove();
+                    }
+                }
+            
+                let currentText = document.querySelectorAll(".edit");
+                let newText = prompt("Wanna Edit list?", currentText.innerHTML);
+                for (let i = 0; i < currentText.length; i++) {
+                    currentText[i].onclick = function add() {
+                        this.parentNode.append();
+                    }
+                }
+            }
+
+
+
+            // let main = document.getElementById('#tasks')
+            // for (let i = 0; i <= arr.length; i++){
+            //     main.innerHTML += ``
+            // }
+
+
+
+
+            let x = document.querySelectorAll('#tasks');
+            for (let i = 0; i <= tasks.length; i++) {
+                if (i % 2 == 0) {
+
+                    x[i].style.color = 'red';
+                }
+                else {
+                    x[i].style.color = 'green';
+                }
+            }
+
+        }
+    </script>
+</body>
+
+</html>

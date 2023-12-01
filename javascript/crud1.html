@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <h1>create,remove,replace element in dom</h1>
+         <div id="root">
+        <h1>i am first child</h1>
+      </div>
+      <script>
+        console.log('..........................')
+        let root=document.getElementById('root')
+        //create element
+        let hed=document.createElement('h1')
+        //set attribute
+        hed.setAttribute('text-align','center')
+        hed.setAttribute('class','abc')
+        hed.setAttribute('id','xyz')
+        // hed.className='abc'
+        // hed.id="xyz"
+        hed.innerText="hello how are you"
+        root.appendChild(hed)
+        console.log(hed)
+      </script>
+</body>
+</html>

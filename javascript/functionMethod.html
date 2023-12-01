@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>function method call bind apply</h1>
+    <script>
+
+       //1
+       
+        // let obj={
+        //     name:'utsav',
+        //     add:'delhi'
+        // }
+        // function print(a,b,c,d)
+        // {
+        //     console.log(this)
+        //     console.log(this.name,this.add)
+        //     console.log(a,b,c,d)
+        // }
+        // print.apply(obj,['utsav','delhi',true,'10k'])
+         
+       // 2.
+        // let  obj={
+        //     name:'utsav',
+        //     print()
+        //     {
+        //         console.log(this.name)
+        //     }
+        // }
+        // let obj2={
+        //     name:'vicky'
+        // }
+        // obj.print()
+        // obj.print.apply(obj2)
+
+
+    //     //3.
+    //     function print(a,b)
+    //     {
+    //         this.name=a
+    //         this.add=b
+    //     }
+    //     function details(name,add,age)
+    //     {
+    //         print.apply(this,[name,add])
+    //         this.age=age
+    //     }
+    // let x=   new details('utsav','delhi','x')
+    // console.log(x)
+
+
+       //...............................................
+    //    let obj={
+    //     name:"utsav",
+    //     add:'delhi'
+    //    }
+    //    function details()
+    //    {
+    //     console.log(this.name,this.add)
+    //    }
+    // let x=   details.bind(obj)
+    //  x()
+
+   //2
+//    let  obj={
+//             name:'utsav',
+//             print()
+//             {
+//                 console.log(this.name)
+//             } }
+
+//      let obj2={
+//             name:'vicky'
+//         }
+//         obj.print()
+//       let x=  obj.print.bind(obj2)
+//       x()
+
+
+//3.
+    //     function print(a,b)
+    //     {
+    //         this.name=a
+    //         this.add=b
+    //     }
+    //     function details(name,add,age)
+    //     {
+    //       let x=  print.bind(this,name,add)
+    //       x()
+    //         this.age=age
+    //     }
+    // let x=   new details('utsav','delhi','x')
+    // console.log(x)
+
+  let  obj={
+    name:'utsaav',
+    add:'delhi',
+    details:function()
+    {
+        console.log(this.name,this.add)
+    }
+   }
+   function print()
+   {
+    //console.log(this.name,this.add)
+    this.details()
+   }
+   print.call(obj)
+    </script>
+</body>
+</html>

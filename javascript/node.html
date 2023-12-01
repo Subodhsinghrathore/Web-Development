@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #root
+        {
+            background-color: red;
+        }
+        #child1
+        {
+            background-color: yellow;
+        }
+        #child2
+        {
+            background-color: blue;
+        }
+        #hed1
+        {
+            color:black
+        }
+        #hed2
+        {
+            color:white
+        }
+    </style>
+</head>
+<body>
+        <div class="container" id="root">
+            <!-- //hello utsav -->
+            <div id="child1">
+                <h1 id="hed1"> heading 1</h1>
+            </div>
+            <div id="child2">
+                <h1 id="hed2"> heading 2</h1>
+            </div>
+        </div>
+        <script>
+            let root=document.getElementById('root')
+            //console.log(root.childNodes)
+           // console.log(root.children)
+          // console.log(root.nodeName)
+          console.log(root.nodeType)
+          console.log(root.childNodes[0].nodeType)
+          console.log(root.childNodes[1].nodeType )
+          console.log(root.firstChild)
+          console.log(root.firstElementChild)
+          console.log(root.lastChild)
+          console.log(root.lastElementChild)
+          console.log(root.children[0].lastElementChild)
+        </script>
+</body>
+</html>

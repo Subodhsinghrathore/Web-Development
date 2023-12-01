@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCQ Paper</title>
+</head>
+
+<body>
+    <h1> Muktiple Choice Questions</h1>
+    <ol type="1">
+        <li>
+            <p>JavaScript is ______ Language.</p><br>
+        </li>
+        <form>
+            <input type="radio" name="choice1" value="Scripting"> Scripting
+            <input type="radio" name="choice1" value="Programming"> Programming
+            <input type="radio" name="choice1" value="Application"> Application
+            <input type="radio" name="choice1" value="None of These"> None of These
+        </form>
+        <li>
+            <p>JavaScript is ______ Language.</p><br>
+        </li>
+        <form>
+            <input type="radio" name="choice2" value="Scripting"> Scripting
+            <input type="radio" name="choice2" value="Programming"> Programming
+            <input type="radio" name="choice2" value="Application"> Application
+            <input type="radio" name="choice2" value="None of These"> None of These
+        </form>
+        <li>
+            <p>JavaScript is ______ Language.</p><br>
+        </li>
+        <form>
+            <input type="radio" name="choice3" value="Scripting"> Scripting
+            <input type="radio" name="choice3" value="Programming"> Programming
+            <input type="radio" name="choice3" value="Application"> Application
+            <input type="radio" name="choice3" value="None of These"> None of These
+        </form>
+        <li>
+            <p>JavaScript is ______ Language.</p><br>
+        </li>
+        <form>
+            <input type="radio" name="choice4" value="Scripting"> Scripting
+            <input type="radio" name="choice4" value="Programming"> Programming
+            <input type="radio" name="choice4" value="Application"> Application
+            <input type="radio" name="choice4" value="None of These"> None of These
+        </form>
+        <li>
+            <p>JavaScript is ______ Language.</p><br>
+        </li>
+        <form>
+            <input type="radio" name="choice5" value="Scripting"> Scripting
+            <input type="radio" name="choice5" value="Programming"> Programming
+            <input type="radio" name="choice5" value="Application"> Application
+            <input type="radio" name="choice5" value="None of These"> None of These
+        </form>
+        <li>
+            <p>JavaScript is ______ Language.</p><br>
+        </li>
+        <form>
+            <input type="radio" name="choice6" value="Scripting"> Scripting
+            <input type="radio" name="choice6" value="Programming"> Programming
+            <input type="radio" name="choice6" value="Application"> Application
+            <input type="radio" name="choice6" value="None of These"> None of These
+        </form>
+        <li>
+            <p>JavaScript is ______ Language.</p><br>
+        </li>
+        <form>
+            <input type="radio" name="choice7" value="Scripting"> Scripting
+            <input type="radio" name="choice7" value="Programming"> Programming
+            <input type="radio" name="choice7" value="Application"> Application
+            <input type="radio" name="choice7" value="None of These"> None of These
+        </form>
+        <li>
+            <p>JavaScript is ______ Language.</p><br>
+        </li>
+        <form>
+            <input type="radio" name="choice8" value="Scripting"> Scripting
+            <input type="radio" name="choice8" value="Programming"> Programming
+            <input type="radio" name="choice8" value="Application"> Application
+            <input type="radio" name="choice8" value="None of These"> None of These
+        </form>
+        <li>
+            <p>JavaScript is ______ Language.</p><br>
+        </li>
+        <form>
+            <input type="radio" name="choice9" value="Scripting"> Scripting
+            <input type="radio" name="choice9" value="Programming"> Programming
+            <input type="radio" name="choice9" value="Application"> Application
+            <input type="radio" name="choice9" value="None of These"> None of These
+        </form>
+        <li>
+            <p>JavaScript is ______ Language.</p><br>
+        </li>
+        <form>
+            <input type="radio" name="choice0" value="Scripting"> Scripting
+            <input type="radio" name="choice0" value="Programming"> Programming
+            <input type="radio" name="choice0" value="Application"> Application
+            <input type="radio" name="choice0" value="None of These"> None of These
+        </form>
+    </ol>
+    <button onclick="submitAnswer()">Submit Answer</button>
+    <script>
+        var submitAnswer = function () {
+
+            var radios = document.getElementsByName('choice2');
+            var val = "";
+            for (var i = 0, length = radios.length; i < length; i++) {
+                if (radios[i].checked) {
+                    val = radios[i].value;
+                    break;
+                }
+            }
+
+            if (val == "") {
+                alert('please select choice answer');
+            } else if (val == "Scripting") {
+                alert('Answer is correct !');
+            } else {
+                alert('Answer is wrong');
+            }
+        };
+    </script>
+</body>
+
+</html>

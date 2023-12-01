@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //q2: find greatest of three
+        // const num1=parseFloat(prompt("Enter First number") )
+        // const num2=parseFloat(prompt("Enter Second number") )
+        // const num3=parseFloat(prompt("Enter Third number") )
+        // let largest;
+
+        // if(num1>= num2 && num1>=num3){
+        //     largest = num1
+        // }
+        // else if(num2>=num1 && num2>=num3){
+        //     largest = num2
+        // }
+        // else{
+        //     largest = num3
+        // }
+        // console.log("The largest of", num1, num2, num3, "is", largest)
+
+        //q3: convert farenheit to celcius
+        // let farenheit = parseFloat(prompt("Enter farenheit"))
+        // let celcius = (farenheit - 32)*5/9
+        // console.log("farenheit", farenheit, "to celcius is", celcius)
+
+        //q4: check equilaterl, isoceles, scalene
+
+        // const side1 = parseFloat(prompt("Enter Length of first side") )
+        // const side2 = parseFloat(prompt("Enter Length of second side") )
+        // const side3 = parseFloat(prompt("Enter Length of third side") )
+        // let equilaterl, scalene, isoceles
+
+        // if(side1==side2 && side2==side3 && side1==side3){
+        //     console.log("it's an eqilateral triangle")
+        // }
+        // else if((side1==side2 && side1 !== side3) || (side2==side3 && side2 !== side1) || (side1==side3 && side1 !== side2)){
+        //     console.log("It's a isoceles triangle")
+        // }
+        // else{
+        //     console.log("it is a scalene trianle")
+        // }
+        //
+        
+
+
+
+
+        // let row = parseInt(prompt("Enter row"))
+        let str= ""
+        let i
+        for (let i = 0; i <=5; i++) {  
+             for (let j = 0; j <= 5-i ; j++) {
+              str += " "  
+             }
+            for(let k=i; k>=1; k--){
+                str += k //str=str+k
+            }
+            for(let k=2; k<=i; k++){
+                str += k
+            }
+            str += '\n'
+        }
+        console.log(str)
+
+    </script>
+    
+</body>
+</html>

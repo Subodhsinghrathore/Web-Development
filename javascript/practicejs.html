@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //WAP to display 1 to 10
+        // function numbers(){
+        //     let i=1
+        //     for(i=0; i<=10; i++){
+        //     console.log(i);
+        //     }
+        // }
+        // numbers()
+
+        // //WAP to display name 10 times
+        // function names(){
+        //     let n=0;
+        //     let string = prompt("Enter your name")
+        //     for(n=0; n<10; n++)
+        //         console.log(string);
+        // }
+        // names()
+
+        //WAP to print even numbers
+        // function even(){
+        //     let i=1;
+        //     for(i=1; i<=10; i++){
+        //         if(i%2==0){
+        //             console.log(i)
+        //         }
+        //     }
+        // }
+        // even()
+
+        //count the length 
+        // function counting(number) {
+        //     let count = 0;
+        //     for (let n = number; n > 0; n = Math.floor(n / 10)) {
+        //         count++;
+        //     }
+        //     return count;
+        // }
+
+        //     let num = 12345;
+        //     let result = counting(num);
+        //     console.log(`Number of digits in ${num}: ${result}`);
+
+        //Summation of numbers
+        // function summation(){
+        //     const number = 10;
+        //     let sum = 0;
+        //     for(i = 0; i <= number; i++){
+        //     sum = sum + i;
+        //     }
+        //     console.log(`sum of first ${number} natural numbers is: `, sum);
+        // }
+        // summation()
+
+        // program to generate a multiplication table
+
+        // take input from the user
+        // const number = parseInt(prompt('Enter an integer: '));
+
+        // creating a multiplication table
+        // function table(){
+        //     for(let i = 1; i <= 10; i++) {
+        //         const result = i * number;
+        //         console.log(`${number} * ${i} = ${result}`);
+        //     }
+        // }
+        // table()
+
+        //Check prime
+        // function PrimeNumber(){
+        //     const number = parseInt(prompt("Enter a number"))
+        //     let prime = true;
+        //     if(number>1){
+        //         for(let i=2; i<number; i++){
+        //             if(number%i==0){
+        //                 prime=false
+        //                 break
+        //             }
+        //         }
+        //         if(prime){
+        //             console.log(number,"is a prime number")
+        //         }
+        //             else{
+        //                 console.log(number,"is not a prime")
+        //         }
+        //     }
+        // }
+        // PrimeNumber()
+
+        // To check a number is palindrome
+
+        // let a= prompt("Enter a number")
+        // let sum=0,b,z=a
+        // while(a>0)
+        // {
+        // b=a%10
+        // sum=sum*10+b
+        // a=parseInt(a/10)
+        // }
+        // console.log(sum)
+        // if(z==sum){
+        // console.log("palindrome number",sum)
+        // }
+        // else{
+        // console.log("not a palindrome number",sum)
+        // }
+
+        // program to check an Armstrong number of n digits
+
+        // take an input
+        // const number = prompt("Enter a positive integer");
+        // const numberOfDigits = number.length;
+        // let sum = 0;
+        // let temp = number;
+
+        // while (temp > 0) {
+
+        //     let remainder = temp % 10;
+
+        //     sum += remainder ** numberOfDigits;
+
+        //     // removing last digit from the number
+        //     temp = parseInt(temp / 10); // convert float into integer
+        // }
+
+        // if (sum == number) {
+        //     console.log(`${number} is an Armstrong number`);
+        // }
+        // else {
+        //     console.log(`${number} is not an Armstrong number.`);
+        // }
+
+        // Perfect number
+
+        // let number = prompt("Enter a number")
+        // let temp=0
+        // for(let i=1; i<=number/2; i++){
+        //     if(number%i == 0){
+        //         temp+=i;
+        //     }
+        // }
+        // if (temp == number && temp!== 0){
+        //     console.log( number,"is a perfect number")
+        // }
+        // else{
+        //     console.log(number, "is not perfect number") 
+        // }
+
+
+
+        // patterns
+
+        // let str = '';
+        // for (let i = 1; i <= 4; i++) {  
+        //     for (let j = 1; j <= 4 - i; j++) {
+        //         str = str + ' ';
+        //     }
+        //     for (let k = 1; k <= i; k++) {
+        //         str = str + '*';
+        //     }
+        //     str += '\n'
+        // }
+        // console.log(str);
+
+   
+
+        // let star = ' ';
+        // for (let i = 0; i <= 4; i++) {  
+        //     for (let j = 0; j <= 4-i ; j++) {
+        //         star = star + ' ';
+        //     }
+        //     for (let k = 1; k <= i; k++) {
+        //         star = star + '*';
+        //     }
+        //     star += '\n'
+        // }
+        // console.log(star);
+
+
+/*
+        let n = 4;
+        let star = '';
+        for (let i = 1; i <= n; i++) {  
+            for (let j = 0; j <= n-i ; j++) {
+                star = star + '*';
+            }
+            star += '\n'
+        }
+        console.log(star);
+*/
+
+/*
+
+        let n = 4; // row or column count
+            // defining an empty string
+            let string = "";
+
+            for (let i = 0; i < n; i++) { // external loop
+                for (let j = 0; j < n; j++) { // internal loop
+                    if(i==j){
+                    string += "1";
+                    }
+                    else{
+                        string += "0"
+                    }
+                }
+                // newline after each row
+                string += "\n";
+            }
+            // printing the string
+            console.log(string);
+*/
+
+/*
+        let n=4;
+        let str= "";
+        for(i=0; i<=n; i++){
+            for(j=0; j<i; j++){
+                if(j==0 || j==2){
+                str += "@"
+                }
+                else{
+                    str += "*"
+                }
+            }
+            str += "\n"
+        }
+        console.log(str)
+*/
+/*
+        let n = 4;
+        let str = "";
+        for (i = 0; i <= n; i++) {
+            for (j = 0; j < i; j++) {
+                if (j == 1 || j==3) {
+                    str += "*"
+                }
+                else if(i==0 || j==0 && i==2 || j==2 ){
+                    str += "#"
+                }
+                else if(i==3 || j==0){
+                    str += "@"
+                }
+                else{
+                    str += "@"
+                }
+            }
+            str += "\n"
+        }
+        console.log(str)
+        */ 
+       
+        // prime betwwen two numbers
+
+/*        function isPrime(){
+            let first = parseInt(prompt("Enter First range"))
+            let last = parseInt(prompt("Enter Last range"))
+
+            for(let i=first; i<=last; i++){
+                let notPrime = false;
+                for(j=2; j<i; j++){
+                    if(i%j==0){
+                        notPrime=true;
+                    }
+                }
+                if(i>1 && notPrime == false){
+                    console.log(i)
+                }
+            }
+        }
+        isPrime()
+*/
+
+        // Armstrong numbers between two numbers
+
+ /*       function armstrong() {
+                let first = parseInt(prompt("Enter First range"))
+                let last = parseInt(prompt("Enter Last range"))
+
+                for (let i = first; i <= last; i++) {
+                    let numberOfDigits = i.toString().length;
+                    let sum = 0;
+                    let temp = i;
+                    while (temp > 0) {
+
+                        let remainder = temp % 10;
+                        sum += remainder ** numberOfDigits;
+                        temp = parseInt(temp / 10);
+                    }
+                    if (sum == i) {
+                        console.log(i);
+                    }
+
+                }
+            }
+            armstrong()
+*/
+
+            // even and odd
+/*               let first = parseInt(prompt("Enter First range"))
+                let last = parseInt(prompt("Enter Last range"))
+                for (let i = first; i <= last; i++) {
+                if (i % 2 == 0) {
+                    console.log(i,"the number is even");
+                }
+                else {
+                    console.log(i,"the number is odd");
+                }
+            }
+*/
+
+            //Alternative
+ /*           let first = parseInt(prompt("Enter First range"))
+            let last = parseInt(prompt("Enter Last range"))
+            let count = 2
+            for (let i = first; i <= last; i++){
+                x%2 !== 0? count%2 !== 0 ? console.log(x) count++ : count++;
+            }*/
+// strong nubers
+
+    let count = 1
+    for (let i = 1; i <= 50000; i++) {
+        let no = i;
+        let temp = no
+        let sum = 0
+        while (temp > 0) {
+            let rem = temp % 10
+            let fact = 1
+            for (let i = 1; i <= rem; i++) {
+                fact = fact * i
+            }
+            sum = sum + fact
+            temp = Math.trunc(temp / 10)
+        }
+        if (no == sum) {
+            if (count % 2 != 0) {
+                console.log('strong', no)
+                count++
+            }
+            else {
+                count++
+            }
+
+        }
+    }
+
+     
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
